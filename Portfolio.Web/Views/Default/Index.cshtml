@@ -1,0 +1,58 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Personal Bootstrap Template</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+
+
+
+</head>
+
+<body>
+
+    <!-- ======= Header ======= -->
+
+    @await Html.PartialAsync("PartialHeader")
+
+    <!-- End Header -->
+    <!-- ======= About Section ======= -->
+    @await Component.InvokeAsync("About")
+    <!-- End About Section -->
+
+
+    <!-- ======= Resume Section ======= -->
+    @await Component.InvokeAsync("Resume")
+    <!-- End Resume Section -->
+
+    <!-- ======= Services Section ======= -->
+    @await Component.InvokeAsync("Services")
+
+    <!-- End Services Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    @await Component.InvokeAsync("Portfolio")
+
+    <!-- End Portfolio Section -->
+
+    <!-- ======= Contact Section ======= -->
+    @await Component.InvokeAsync("Contact")
+    <!-- End Contact Section -->
+
+
+
+
+</body>
+
+</html>
+
