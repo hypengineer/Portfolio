@@ -1,19 +1,21 @@
 ﻿<header id="header">
     <div class="container">
 
-        <h1><a asp-controller="Home" asp-action="Index">Okan İZİ</a></h1>
+        
         <!-- Uncomment below if you prefer to use an image logo -->
         @*<a  class="mr-auto"><img src="~/img/me.jpg" alt="" class="img-fluid"></a> *@
         <h2>I'm a passionate <span>graphic designer</span> from New York</h2>
 
         <nav id="navbar" class="navbar">
             <ul>
-                <li><a class="nav-link active" href="#header">Home</a></li>
+                <li><a class="nav-link active" asp-controller="Default" asp-action="Index">Home</a></li>
                 <li><a class="nav-link" href="#about">About</a></li>
                 <li><a class="nav-link" href="#resume">Resume</a></li>
                 <li><a class="nav-link" href="#services">Services</a></li>
                 <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
                 <li><a class="nav-link" href="#contact">Contact</a></li>
+                <li><a class="nav-link" asp-area="Admin" asp-controller="Home" asp-action="Index">Admin</a></li>
+
             </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>
 
@@ -26,6 +28,11 @@
             <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
             <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
         </div>
+
+        
+
+        
+
 
     </div>
 </header>

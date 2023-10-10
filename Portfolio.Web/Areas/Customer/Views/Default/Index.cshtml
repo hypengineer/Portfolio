@@ -1,5 +1,4 @@
-﻿
-@{
+﻿@{
     ViewData["Title"] = "Index";
 }
 
@@ -22,29 +21,23 @@
 <body>
 
     <!-- ======= Header ======= -->
-
     @await Html.PartialAsync("PartialHeader")
 
     <!-- End Header -->
     <!-- ======= About Section ======= -->
     @await Component.InvokeAsync("About")
     <!-- End About Section -->
-
-
     <!-- ======= Resume Section ======= -->
     @await Component.InvokeAsync("Resume")
     <!-- End Resume Section -->
-
     <!-- ======= Services Section ======= -->
     @await Component.InvokeAsync("Services")
 
     <!-- End Services Section -->
-
     <!-- ======= Portfolio Section ======= -->
     @await Component.InvokeAsync("Portfolio")
 
     <!-- End Portfolio Section -->
-
     <!-- ======= Contact Section ======= -->
     @await Component.InvokeAsync("Contact")
     <!-- End Contact Section -->
@@ -53,6 +46,7 @@
 
 
 </body>
+ 
 
 </html>
 

@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace Portfolio.Web.ViewComponents
+namespace Portfolio.Web.Areas.Customer.ViewComponents
 {
-    public class Portfolio:ViewComponent
+    public class Resume : ViewComponent
     {
         public IViewComponentResult Invoke()
         {
