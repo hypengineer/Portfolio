@@ -15,6 +15,24 @@ namespace Portfolio.Data
 
         public virtual DbSet<About> Abouts { get; set; }
 
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+            modelBuilder.Entity<About>().HasData(
+                new About {
+                    Id=1,
+                    Title="Title",
+                    Description="Description area",
+                    Birthday= DateTime.Parse("1994-10-01"),
+                    Age = 29,
+                    Degree = "Degree Area",
+                    Phone = "Phone Number",
+                    Email = "Email Area",
+                    City = "City Area",
+                    ImageUrl= ""
+                } );
+        }
+
 
 
     }
