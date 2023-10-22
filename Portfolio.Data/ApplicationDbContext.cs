@@ -21,6 +21,7 @@ namespace Portfolio.Data
             modelBuilder.Entity<About>().HasData(
                 new About {
                     Id=1,
+                    Name="Okan İZİ",
                     Title="Title",
                     Description="Description area",
                     Birthday= DateTime.Parse("1994-10-01"),

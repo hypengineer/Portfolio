@@ -15,7 +15,7 @@ namespace Portfolio.Web.Areas.Admin.Controllers
 
         public IActionResult Index()
         {
-            var objAbout = _db.Abouts.FirstOrDefault();
+            List<About> objAbout = _db.Abouts.ToList();
             
             return View(objAbout);
         }
