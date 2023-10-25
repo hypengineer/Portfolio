@@ -1,5 +1,5 @@
 ﻿@using Portfolio.Models;
-@model About
+@model List<About>
 
 <div class="card shadow border-0 mt-4">
     <div class="card-header bg-secondary bg-gradient ml-0 py-3">
@@ -38,26 +38,30 @@
                 {
                     <tr>
                         <td>
-                            @obj.Name
+                            @item.Name
                         </td>
                         <td>
-                            @obj.Title
+                            @item.Title
                         </td>
                         <td>
-                            @obj.Degre
+                            @item.Degree
                         </td>
                         <td>
-                            @obj.
+                            @item.Phone
                         </td>
                         <td>
-                            @obj.Title
+                            @item.Email
                         </td>
+                        <td>
+                            @item.ImageUrl
+                        </td>
+
                         <td>
                             <div class="w-75 btn-group" role="group">
-                                <a asp-controller="Category" asp-action="Edit" asp-route-id="@obj.Id" class="btn btn-primary mx-2">
+                                <a asp-controller="Category" asp-action="Edit" asp-route-id="@item.Id" class="btn btn-primary mx-2">
                                     <i class="bi bi-pencil-square"> </i>Edit
                                 </a>
-                                <a asp-controller="Category" asp-action="Delete" asp-route-id="@obj.Id" class="btn btn-danger mx-2">
+                                <a asp-controller="Category" asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger mx-2">
                                     <i class="bi bi-trash"></i> Delete
                                 </a>
                             </div>
