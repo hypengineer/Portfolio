@@ -13,13 +13,13 @@ namespace Portfolio.Data
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) { 
         }
 
-        public virtual DbSet<About> Abouts { get; set; }
+        public virtual DbSet<AboutModel> Abouts { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
-            modelBuilder.Entity<About>().HasData(
-                new About {
+            modelBuilder.Entity<AboutModel>().HasData(
+                new AboutModel {
                     Id=1,
                     Name="Okan İZİ",
                     Title="Title",
